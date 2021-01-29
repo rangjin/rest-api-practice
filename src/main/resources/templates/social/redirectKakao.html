@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect Kakao</title>
+</head>
+<body>
+<div>
+    <span>Access_token : </span>
+    <span th:text="${authInfo.access_token}"></span>
+</div>
+<div>
+    <span>Token_Type : </span>
+    <span th:text="${authInfo.token_type}"></span>
+</div>
+<div>
+    <span>Refresh_token : </span>
+    <span th:text="${authInfo.refresh_token}"></span>
+</div>
+<div>
+    <span>Expires_IN : </span>
+    <span th:text="${authInfo.expires_in}"></span>
+</div>
+<div>
+    <span>Scope : </span>
+    <span th:text="${authInfo.scope}"></span>
+</div>
+</body>
+</html>

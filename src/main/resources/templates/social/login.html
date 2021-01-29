@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kakao login</title>
+</head>
+<body>
+<a th:href="@{{kakao}?client_id={clientId}&response_type={responseType}&redirect_uri={redirectUri}(kakao=${kakao}, clientId=${clientId}, responseType=${responseType}, redirectUri=${redirectUri})}">Login to Kakao</a>
+</body>
+</html>

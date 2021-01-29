@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate.hbm2ddl.auto: create-drop
+    showSql: true
+  h2:
+    console:
+      enabled: true
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
+  jwt:
+    secret: govlepel@$&
+  social:
+    kakao:
+      client_id: 749ddaef93321e7a3207ea9a8ed636ea # 앱생성시 받은 REST API 키
+      redirect: /social/login/kakao
+      url:
+        login: https://kauth.kakao.com/oauth/authorize
+        token: https://kauth.kakao.com/oauth/token
+        profile: https://kapi.kakao.com/v2/user/me
+  url:
+    base: http://localhost:8080
